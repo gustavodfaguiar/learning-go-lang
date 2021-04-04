@@ -1,5 +1,17 @@
 package task
 
+/*
+
+sqlite3 data/task.db
+
+CREATE TABLE task (
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   title text NOT NULL,
+   description text NOT NULL,
+   type integer not null
+);
+*/
+
 type Task struct {
 	ID          int64    `json:"id"`
 	Title       string   `json:"title"`
