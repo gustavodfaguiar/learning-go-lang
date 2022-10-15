@@ -20,8 +20,7 @@ func MakeNewWebserver() *Webserver {
 	return &Webserver{}
 }
 
-func (w *Webserver) Server() {
-
+func (w *Webserver) Serve() {
 	r := mux.NewRouter()
 	n := negroni.New(
 		negroni.NewLogger(),
